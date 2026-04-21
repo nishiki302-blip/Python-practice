@@ -2,11 +2,13 @@ def main():
     #Assume user's input is 24-hour time format h:mm (or) hh:mm
     #and 12-hour format h:mm a.m. (or) hh:mm p.m.
     time = input("Time: ").strip()
-        
+    
+    #to handle 12-hour time format
     if time.endswith("."):
         time , period = time.split(" ")
         time = convert(time,period)
 
+    #to handle 24-hour time format
     else:
         time = convert(time)
 
