@@ -31,11 +31,13 @@ def main():
                 y = int(y)
                 if d > 31:
                     raise ValueError()
-                print(f"{y}-{(month.index(m) + 1):02}-{d:02}")
+                print(f"{y:04}-{(month.index(m) + 1):02}-{d:02}")
             else:
                 raise ValueError()
             
-            break
         except ValueError:
             pass
+
+        else:
+            break
 main()

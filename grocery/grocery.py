@@ -13,12 +13,13 @@ def main():
 
         except EOFError:
             break
-        
+
         else:
             if item in note:
                 note[item] = note[item] + 1
             else:
                 note[item] = 1
+
     print("")
     
     for name in sorted(note.keys()):
