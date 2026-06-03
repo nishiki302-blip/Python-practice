@@ -2,7 +2,7 @@
 say = input("Say: ")
 
 def main():
-    #use convert function and assign modify string to the new variable
+    #use convert function and assign to the new variable
     dsg_say = convert(say)
     #print modify string
     print(dsg_say)
